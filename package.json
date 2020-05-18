@@ -1,0 +1,28 @@
+{
+  "name": "cra-template-oblong-typescript",
+  "version": "1.0.0",
+  "keywords": [
+    "react",
+    "create-react-app",
+    "template",
+    "typescript",
+    "oblong"
+  ],
+  "description": "Create React App template for Oblong using Typescript.",
+  "main": "template.json",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/traviswatsonws/cra-template-oblong-typescript.git"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=10"
+  },
+  "bugs": {
+    "url": "https://github.com/traviswatsonws/cra-template-oblong-typescript/issues"
+  },
+  "files": [
+    "template",
+    "template.json"
+  ]
+}
