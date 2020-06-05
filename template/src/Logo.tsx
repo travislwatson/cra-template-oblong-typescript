@@ -1,22 +1,21 @@
 import { React, O } from 'oblong'
 import logo from './logo.svg'
 
-const size = O.createState().withDefault('100').as('logo.size')
+const size = O.state('logo.size').as('100')
 
-const scale = O.createQuery()
+const scale = O.query()
   .with({ size })
   .as((o) => (parseInt(o.size) || 0) / 100)
 
-const reset = O.createCommand()
+const reset = O.command('reset')
   .with({ size })
-  .named('reset')
   .as((o) => {
     if (window.confirm(`The size is currently ${o.size}. Reset?`)) {
       o.size = '100'
     }
   })
 
-export const Logo = O.createView()
+export const Logo = O.view('Logo')
   .with({ size, scale, reset })
   .as((o) => (
     <>
